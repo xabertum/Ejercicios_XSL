@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="XSL-EJ4-Subastas online.xsl" type="text/xsl"?>
+
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<subastas lugar="http://www.setdart.com">
+  <subasta fechayhora='2014-06-07T18:40:00' online="yes">
+    <lote id="35007238" nombre="Pinturas del siglo XX" precio_salida="2000 €">
+      <producto>
+        <descripcion>
+          <![CDATA[
+            <h1>CLAVÉ I SANMARTÍ, Antoni (Barcelona, 1913 – Saint Tropez, Francia, 2005)</h1>
+            <p>"Dernières nouvelles", 1972</p>
+            <p>Collage sobre lienzo</p>
+            <p>Firmado en el ángulo inferior derecho. Fechado y titulado al dorso.</p>
+            <p>Adjunta certificado de autenticidad emitido por Nathalie Clavé</p>
+            <p>Medidas: 56 x 76 cm; 84 x 104 cm (marco)</p>
+          ]]>
+        </descripcion>
+        <imagenes>
+          <imagen>http://www.setdart.com/modules/subasta/albums/batch/14404/2/35007238-%28100%29.jpg</imagen>
+        </imagenes>
+        <tipo_bien>Pintura</tipo_bien>
+      </producto>
+      <producto>
+        <descripcion>
+          <![CDATA[
+            <h1>TORRENT PRATS, José Roberto (Ciudadela, 1904 - 1990)</h1>
+            <p>"Tanca menorquina", 1961</p>
+            <p>Oleo sobre lienzo</p>
+            <p>Medidas: 53 x 65 cm. ; 57 x 69 cm. (marco)</p>
+          ]]>
+        </descripcion>
+        <imagenes>
+          <imagen>http://www.setdart.com/modules/subasta/albums/batch/SETDART2/44244/5/normal_35113421-%28100%29.jpg</imagen>
+          <imagen>http://www.setdart.com/modules/subasta/albums/batch/SETDART2/44244/5/normal_35113421-%284%29.jpg</imagen>
+        </imagenes>
+        <tipo_bien>Pintura</tipo_bien>
+      </producto>
+    </lote>
+    <lote id="35007529" nombre="Escultura en metal cromado" precio_salida="500 €">
+      <producto>
+        <descripcion>
+          <![CDATA[
+            <h1>ORTIZ BERROCAL, Miguel (Villanueva de Algaidas, Málaga, 1933 – Antequera, Málaga, 2006)</h1>
+            <p>Escultura en metal cromado, ejemplar 2.249</p>
+            <p>Medidas: 15,5 x 6,5 cm</p>
+            <p>Formado en Madrid, Berrocal decide dedicarse a la escultura durante su estancia en París, en 1955.</p>
+            <p>Ha expuesto en Italia, Francia, Alemania, España y Estados Unidos, recibió la medalla de oro del Bronceto de Padua</p>
+          ]]>
+        </descripcion>
+        <imagenes>
+          <imagen>http://www.setdart.com/modules/subasta/albums/batch/33714/1/35007529-%28100%29.jpg</imagen>
+        </imagenes>
+        <tipo_bien>Escultura</tipo_bien>
+      </producto>
+    </lote>
+    <lote id="35037976" nombre="Reloj ZENITH Defy Xtreme" precio_salida="90 €">
+      <producto>
+        <descripcion>
+          <![CDATA[
+            <h1>Reloj ZENITH Defy Xtreme. High Pressure Resistant Chronograph</h1>
+            <p>For xtreme condition use, para caballero, n. 96.0525.4021</p>
+            <p>Caja en titanio. Esfera plateada “Skeleton” con agujas tipo punta de lanza con franjas en color rojo y aguja cronográfica central con punta de flecha.</p>
+            <p>Contadores centrales para segundos y minutos del crono.</p>
+          ]]>
+        </descripcion>
+        <imagenes>
+          <imagen>http://www.setdart.com/modules/subasta/albums/userpics/24338/35037976-_100_.jpeg</imagen>
+          <imagen>http://www.setdart.com/modules/subasta/albums/userpics/24338/35037976-_9_.jpeg</imagen>
+        </imagenes>
+        <tipo_bien>Reloj</tipo_bien>
+      </producto>
+    </lote>
+  </subasta>	
+</subastas>
