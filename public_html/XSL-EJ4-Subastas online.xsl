@@ -9,70 +9,84 @@
 -->
 
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
-  <xsl:output method="html" />
+    <xsl:output method="html" />
 
-  <!-- TODO customize transformation rules 
-       syntax recommendation http://www.w3.org/TR/xslt 
-  -->
-  <xsl:template match="/">
-    <html>
-      <head>
-        <title>XSL-EJ4-Subastas online.xsl</title>
-        <link rel="stylesheet" type="text/css" href="style.css"/>
-      </head>
-      <body>
+    <!-- TODO customize transformation rules 
+         syntax recommendation http://www.w3.org/TR/xslt 
+    -->
+    <xsl:template match="/">
+        <html>
+            <head>
+                <title>XSL-EJ4-Subastas online.xsl</title>
+                <link rel="stylesheet" type="text/css" href="style.css"/>
+            </head>
+            <body>
                 
-        <div id = "wrapper">
+                <div id = "wrapper">
 
-            <section>
-            <h1>
-              Casa de Subastas -  
-              <xsl:value-of select="subastas/@lugar"/>
-            </h1>
-          </section>
+                    <section>
+                        <h1>
+                            Casa de Subastas -  
+                            <xsl:value-of select = "subastas/@lugar"/>
+                        </h1>
+                        
+                        <h3>
+                            <xsl:value-of select = "subastas/subasta/@fechayhora"/>                            
+                        </h3>
+                    </section>
+                    
+                    
+                    <section class = "titulo_lote">
+                        
+                       
+                            <h2>
+                                Lote número: <xsl:value-of select = "subastas/subasta/lote/@id" /> - 
+                                <xsl:value-of select = "subastas/subasta/lote/@nombre" /> - 
+                                Precio de Salida : <xsl:value-of select = "subastas/subasta/lote/@precio_salida" />
+                            
+                            </h2>
+                                                
+                    </section>
           
-          <section>
-            <h1>
-              Tipo de Subasta -
-              
-              <xsl:choose>
-                <xsl:when test="subastas/subasta/@online = 'yes'">
-                  <xsl:attribute name = "class">online</xsl:attribute>
+                    <section>
+                        <article id= "imagenArticle">
+                            <xsl:for-each select = "subastas/subasta/lote">
+ 
+                                <div class="lote">
+                                    
+                                    <xsl:for-each select = "producto">
+                                        <p>
+                                            <xsl:value-of select="descripcion" disable-output-escaping="yes"/>
+                                        </p>
+                                    
+                                        <p>Lote número: <xsl:value-of select = "/@id" /> - 
+                                            <xsl:value-of select = "/@nombre" />
+                                        </p>
+                                        <xsl:for-each select = "imagenes/imagen">
+                                    
+                                            <img class = "lote_img">
+                                                <xsl:attribute name="src">
+                                                    <xsl:value-of select="."/>
+                                                </xsl:attribute>
+                                    
+                                            </img>
+                                    
+                                        </xsl:for-each>
+                                    
+                                    
+                                    </xsl:for-each>
+                                </div>
+                                
+                                
+                                
+                            </xsl:for-each>
+                        </article>
+                    </section>
                 
-                  Subastas online
-                  
-                </xsl:when>
-                
-                <xsl:otherwise>
-                  
-                  subastas no online
-                  
-                <!-- <xsl:value-of select = "substtring(@fecha,1,10)"/> -->
-                  
-                </xsl:otherwise>
-              </xsl:choose>  
-            </h1>
-          </section>
-                
-          <section>
-            <article id= "imagenArticle">
-              <xsl:for-each select = "subastas/subasta/lote">
-                <div class="lote">
-                  <p>
-                    <xsl:value-of select="producto/descripcion" disable-output-escaping="yes"/>
-                  </p>
                 </div>
-               <xsl:for-each select = "subastas/subasta/lote">
-                  <img class = "lote_img" alt ="" src = "{.}"/>
-                </xsl:for-each>
-              </xsl:for-each>
-            </article>
-          </section>
-                
-        </div>
 
-      </body>
-    </html>
-  </xsl:template>
+            </body>
+        </html>
+    </xsl:template>
     
 </xsl:stylesheet>
