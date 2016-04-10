@@ -23,8 +23,8 @@
       <body>
                 
         <div id = "wrapper">
-                
-          <section>
+
+            <section>
             <h1>
               Casa de Subastas -  
               <xsl:value-of select="subastas/@lugar"/>
@@ -70,6 +70,7 @@
           </section>
                 
         </div>
+
       </body>
     </html>
   </xsl:template>
