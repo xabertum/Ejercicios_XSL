@@ -15,41 +15,45 @@ and open the template in the editor.
  */
 
 
-//------------------- LAYOUT --------------------------------
+//------------------- LAYOUT ---------------------------------------------------
 body {
-    
-    margin: 0px;
-    
+
+  margin: 0px;
 }
 
 #wrapper {
-    
-    max-width: 75%;
-    background-color: wheat;
-    margin: 0 auto;
-    
+
+  max-width: 75%;
+  background-color: wheat;
+  margin: 0 auto;
 }
 
 
+//--------------------- ELEMENTOS ----------------------------------------------
 
 subasta {
-    
-    width: 75%;
-    border: 2px solid blue;
-    
-    
-}
 
+  width: 75%;
+  border: 2px solid blue;
+
+
+}
 .lote p {
-    
-    display: block;
-    
+
+  display: block;
+}
+.lote_img {
+
+  max-width: 75%;
+  position: relative;
+  margin: 10px 14%;
+  border: 2px solid white;
 }
 
-.lote_img {
-    
-    max-width: 50%;
-    
-    
+#imagenArticle {
+
+  margin: 0 auto;
 }
+
+
 
