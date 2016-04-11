@@ -16,7 +16,7 @@ and open the template in the editor.
 
 
 //------------------- LAYOUT ---------------------------------------------------
-body {
+body, html {
 
   margin: 0px;
 }
@@ -32,28 +32,59 @@ body {
 //--------------------- ELEMENTOS ----------------------------------------------
 
 subasta {
-
   width: 75%;
-  border: 2px solid blue;
-
-
+  
 }
-.lote p {
+
+#header {
+   text-align: center;
+   display: block;
+   padding-top: 25px;
+    
+}
+.lote {
 
   display: block;
+  text-align: center;
+  
+}
+
+.lote p {
+    
+    font-size: 20px;
+    
 }
 .lote_img {
 
   max-width: 75%;
   position: relative;
-  margin: 10px 14%;
+  margin: 35px auto;
   border: 2px solid white;
+  display: block;
 }
 
 #imagenArticle {
 
   margin: 0 auto;
 }
+
+h1 {
+    
+    font-size: 25px;
+    margin-top: 0px;
+    
+}
+
+.titulo_lote {
+    border: 3px solid white;
+    margin: 45px auto;
+    width: 75%;
+    text-align: center;
+    border-radius: 35px;
+    background-color: red;
+    
+}
+
 
 
 
