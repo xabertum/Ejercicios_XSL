@@ -23,34 +23,33 @@
             <body>
                 
                 <div id = "wrapper">
-
-                    <section>
+                    <section id = "header">
                         <h1>
                             Casa de Subastas -  
                             <xsl:value-of select = "subastas/@lugar"/>
                         </h1>
                         
                         <h3>
-                            <xsl:value-of select = "subastas/subasta/@fechayhora"/>                            
+                            Fecha de la subasta: 
+                            <xsl:value-of select = " substring(subastas/subasta/@fechayhora, 1, 10)"/>                            
                         </h3>
-                    </section>
-                    
-                    
-                    <section class = "titulo_lote">
-                        
-                       
-                            <h2>
-                                Lote número: <xsl:value-of select = "subastas/subasta/lote/@id" /> - 
-                                <xsl:value-of select = "subastas/subasta/lote/@nombre" /> - 
-                                Precio de Salida : <xsl:value-of select = "subastas/subasta/lote/@precio_salida" />
-                            
-                            </h2>
-                                                
                     </section>
           
                     <section>
                         <article id= "imagenArticle">
                             <xsl:for-each select = "subastas/subasta/lote">
+                                
+                                <div class = "titulo_lote">
+                        
+                       
+                                    <h2>
+                                        Lote número: <xsl:value-of select = "@id" /> - 
+                                        <xsl:value-of select = "@nombre" /> - 
+                                        Precio de Salida: <xsl:value-of select = "@precio_salida" />
+                            
+                                    </h2>
+                                                
+                                </div>
  
                                 <div class="lote">
                                     
@@ -59,9 +58,6 @@
                                             <xsl:value-of select="descripcion" disable-output-escaping="yes"/>
                                         </p>
                                     
-                                        <p>Lote número: <xsl:value-of select = "/@id" /> - 
-                                            <xsl:value-of select = "/@nombre" />
-                                        </p>
                                         <xsl:for-each select = "imagenes/imagen">
                                     
                                             <img class = "lote_img">
@@ -76,8 +72,6 @@
                                     
                                     </xsl:for-each>
                                 </div>
-                                
-                                
                                 
                             </xsl:for-each>
                         </article>
