@@ -24,10 +24,7 @@
                 
                 <div id = "wrapper">
                     <section id = "header">
-                        <h1>
-                            Casa de Subastas -  
-                            <xsl:value-of select = "subastas/@lugar"/>
-                        </h1>
+                       
                         
                         <h3>
                             Fecha de la subasta: 
@@ -40,15 +37,11 @@
                             <xsl:for-each select = "subastas/subasta/lote">
                                 
                                 <div class = "titulo_lote">
-                        
-                       
                                     <h2>
                                         Lote número: <xsl:value-of select = "@id" /> - 
                                         <xsl:value-of select = "@nombre" /> - 
                                         Precio de Salida: <xsl:value-of select = "@precio_salida" />
-                            
                                     </h2>
-                                                
                                 </div>
  
                                 <div class="lote">
@@ -68,8 +61,6 @@
                                             </img>
                                     
                                         </xsl:for-each>
-                                    
-                                    
                                     </xsl:for-each>
                                 </div>
                                 
