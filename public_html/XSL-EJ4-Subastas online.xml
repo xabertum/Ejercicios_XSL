@@ -7,7 +7,6 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
 
-
 <subastas lugar="http://www.setdart.com">
   <subasta fechayhora='2014-06-07T18:40:00' online="yes">
     <lote id="35007238" nombre="Pinturas del siglo XX" precio_salida="2000 €">
